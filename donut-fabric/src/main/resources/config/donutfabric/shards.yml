@@ -1,0 +1,83 @@
+# ============================================================
+#   DonutFabric - Shards Configuration (shards.yml)
+#   Flat 1500 shard cost for all spawners (DonutSMP April 2026 patch)
+# ============================================================
+
+# Shards earned per player kill
+kill-reward: 10
+
+# Shards earned per minute while online (AFK farm rate)
+afk-rate-per-minute: 1
+
+# ── Shard Shop ───────────────────────────────────────────────
+# All spawners cost 1500 shards flat (as of DonutSMP April 2026)
+shop:
+  - id: pig_spawner
+    name: "&fPig Spawner"
+    item: minecraft:pig_spawn_egg
+    cost: 1500
+
+  - id: cow_spawner
+    name: "&fCow Spawner"
+    item: minecraft:cow_spawn_egg
+    cost: 1500
+
+  - id: sheep_spawner
+    name: "&fSheep Spawner"
+    item: minecraft:sheep_spawn_egg
+    cost: 1500
+
+  - id: chicken_spawner
+    name: "&fChicken Spawner"
+    item: minecraft:chicken_spawn_egg
+    cost: 1500
+
+  - id: rabbit_spawner
+    name: "&fRabbit Spawner"
+    item: minecraft:rabbit_spawn_egg
+    cost: 1500
+
+  - id: skeleton_spawner
+    name: "&fSkeleton Spawner"
+    item: minecraft:skeleton_spawn_egg
+    cost: 1500
+
+  - id: zombie_spawner
+    name: "&fZombie Spawner"
+    item: minecraft:zombie_spawn_egg
+    cost: 1500
+
+  - id: spider_spawner
+    name: "&fSpider Spawner"
+    item: minecraft:spider_spawn_egg
+    cost: 1500
+
+  - id: cave_spider_spawner
+    name: "&fCave Spider Spawner"
+    item: minecraft:cave_spider_spawn_egg
+    cost: 1500
+
+  - id: creeper_spawner
+    name: "&fCreeper Spawner"
+    item: minecraft:creeper_spawn_egg
+    cost: 1500
+
+  - id: blaze_spawner
+    name: "&fBlaze Spawner"
+    item: minecraft:blaze_spawn_egg
+    cost: 1500
+
+  - id: magma_cube_spawner
+    name: "&fMagma Cube Spawner"
+    item: minecraft:magma_cube_spawn_egg
+    cost: 1500
+
+  - id: enderman_spawner
+    name: "&fEnderman Spawner"
+    item: minecraft:enderman_spawn_egg
+    cost: 1500
+
+  - id: slime_spawner
+    name: "&fSlime Spawner"
+    item: minecraft:slime_spawn_egg
+    cost: 1500

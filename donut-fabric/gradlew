@@ -1,0 +1,5 @@
+#!/bin/sh
+# Gradle wrapper launcher script
+# This file is a stub — replace with the real gradlew from a fresh `gradle wrapper` run.
+# To generate: run `gradle wrapper --gradle-version 8.6` in the project root.
+exec gradle "$@"

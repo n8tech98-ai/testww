@@ -1,0 +1,35 @@
+# ============================================================
+#   DonutFabric - RTP Configuration (rtp.yml)
+# ============================================================
+
+# Cooldown between /rtp uses in seconds
+cooldown-seconds: 300   # 5 minutes
+
+# Search radius (random X/Z will be within ±radius of 0,0)
+min-radius: 1000
+max-radius: 10000
+
+# Maximum Y level to search from (start searching downward from here)
+max-y: 256
+
+# Blacklisted biomes (won't teleport into these)
+blacklisted-biomes:
+  - minecraft:ocean
+  - minecraft:deep_ocean
+  - minecraft:frozen_ocean
+  - minecraft:deep_frozen_ocean
+  - minecraft:cold_ocean
+  - minecraft:deep_cold_ocean
+  - minecraft:lukewarm_ocean
+  - minecraft:deep_lukewarm_ocean
+  - minecraft:warm_ocean
+  - minecraft:river
+  - minecraft:frozen_river
+  - minecraft:lush_caves
+  - minecraft:dripstone_caves
+
+# Maximum search attempts before giving up
+max-attempts: 50
+
+# World to RTP in (use the server's overworld key)
+world: minecraft:overworld

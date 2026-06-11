@@ -1,0 +1,79 @@
+# ============================================================
+#   DonutFabric - Main Configuration
+#   Recreates DonutSMP June 2026 economy systems
+# ============================================================
+
+# Database backend: "sqlite" (default) or "mongodb"
+database-type: sqlite
+mongodb-uri: "mongodb://localhost:27017/donutfabric"
+
+# ── Economy ─────────────────────────────────────────────────
+economy:
+  starting-balance: 500.0
+  max-balance: 1000000000.0
+  currency-symbol: "$"
+  currency-name: "Dollars"
+
+  # Tax applied to /pay transfers (0.05 = 5%)
+  pay-tax: 0.05
+
+  # Sell multiplier system (mirrors DonutSMP June 2026)
+  # Players start at 1.0x and rise to 3.0x as they accumulate sell revenue
+  sell-multiplier:
+    default: 1.0
+    max: 3.0
+    # Revenue thresholds to reach each tier
+    tiers:
+      - threshold: 0
+        multiplier: 1.0
+      - threshold: 10000
+        multiplier: 1.25
+      - threshold: 50000
+        multiplier: 1.5
+      - threshold: 150000
+        multiplier: 1.75
+      - threshold: 400000
+        multiplier: 2.0
+      - threshold: 800000
+        multiplier: 2.5
+      - threshold: 2000000
+        multiplier: 3.0
+
+# ── Orders ──────────────────────────────────────────────────
+orders:
+  # Tax on order creation (deducted from escrow)
+  creation-tax: 0.08
+  # Max active orders per player
+  max-per-player: 20
+  # Order expiry in hours
+  expiry-hours: 168   # 7 days
+  # Min/max order quantity
+  min-quantity: 1
+  max-quantity: 640000
+
+# ── Auction House ────────────────────────────────────────────
+auction:
+  # Tax on listing creation (% of price, non-refundable)
+  listing-tax: 0.05
+  # Listing expiry in hours
+  expiry-hours: 48
+  # Max active listings per player
+  max-per-player: 45
+  # Min listing price
+  min-price: 1.0
+
+# ── Combat ──────────────────────────────────────────────────
+combat:
+  # Seconds a player remains tagged after being hit
+  tag-duration: 15
+  # Kill the player if they disconnect while tagged
+  logout-punish: true
+  # Ender pearl throw cooldown in seconds
+  pearl-cooldown: 12
+  # Worlds where combat is disabled (safezone)
+  safezone-worlds:
+    - "spawn_world"
+
+# ── MOTD ────────────────────────────────────────────────────
+motd:
+  enabled: true

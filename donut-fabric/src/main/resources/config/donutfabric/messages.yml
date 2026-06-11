@@ -1,0 +1,54 @@
+# ============================================================
+#   DonutFabric - Messages (messages.yml)
+#   Use & color codes. {placeholders} are replaced at runtime.
+# ============================================================
+
+join_motd: "&8[&6Donut&8] &7Welcome back, &e{player}&7! Type &6/help &7for commands."
+
+no_permission: "&cYou don't have permission to do that."
+player_not_found: "&cPlayer not found: &e{player}"
+invalid_amount: "&cInvalid amount. Must be a positive number."
+not_enough_money: "&cYou don't have enough money. Balance: &e{balance}"
+not_enough_shards: "&cYou don't have enough shards. Balance: &b{balance} ✦"
+
+# Economy
+bal_self: "&7Balance: &a{balance} &8| &7Multiplier: &e{multiplier}x &8| &7Sold: &f{sold}"
+bal_other: "&e{player}&7's balance: &a{balance} &8| &7Multiplier: &e{multiplier}x"
+pay_sent: "&7Sent &a{amount} &7to &e{player}&7. (Fee: &c{fee}&7)"
+pay_received: "&e{player} &7sent you &a{amount}&7."
+sell_hand: "&7Sold &e{item} &7x{qty} &7for &a{earned} &8(&7{multiplier}x&8)"
+sell_all: "&7Sold &e{items} &7item types for &a{total}&7. Multiplier: &e{multiplier}x"
+sell_nothing: "&cNothing to sell."
+
+# Orders
+order_created: "&7Buy order placed: &e{qty}x {item} &7@ &a{price} each&7. Cost (with tax): &c{total}"
+order_fulfilled: "&7You fulfilled an order for &e{qty}x {item}&7 and earned &a{earned}&7."
+order_cancelled: "&7Order cancelled. Refunded: &a{refund}&7."
+order_expired: "&7Your order for &e{qty}x {item} &7has expired. Refunded: &a{refund}&7."
+order_filled: "&7Your buy order for &e{qty}x {item} &7has been filled!"
+
+# Auction House
+ah_listed: "&7Listed &e{qty}x {item} &7for &a{price} each &7(fee: &c{fee}&7)."
+ah_sold: "&7Your &e{item} &7sold on the AH for &a{earned}&7!"
+ah_bought: "&7Purchased &e{qty}x {item} &7for &a{total}&7."
+ah_expired: "&7Your AH listing for &e{item} &7expired. Item returned to /ah mine."
+ah_cancelled: "&7Listing cancelled. Item returned."
+
+# Shards
+shards_balance: "&5✦ &dShards&5: &b{balance} ✦"
+shards_given: "&7Gave &b{amount} ✦ &7to &e{player}&7."
+shards_set: "&7Set &e{player}&7's shards to &b{amount} ✦&7."
+shards_kill: "&a+&d{amount} ✦ &7for the kill!"
+shards_purchase: "&7Purchased &e{item} &7for &b{cost} ✦&7."
+
+# RTP
+rtp_searching: "&7Searching for a safe location..."
+rtp_teleporting: "&7Teleporting to &e{x}&8, &e{y}&8, &e{z}&7..."
+rtp_cooldown: "&cRTP on cooldown! Try again in &e{time}&c."
+rtp_combat: "&cCannot RTP while in combat!"
+rtp_failed: "&cCould not find a safe location. Try again."
+
+# Combat
+combat_tagged: "&c⚔ You are in combat! &e{time}s remaining."
+combat_logout: "&c{player} &7tried to combat log and was punished."
+pearl_cooldown: "&cPearl cooldown: &e{time}s"

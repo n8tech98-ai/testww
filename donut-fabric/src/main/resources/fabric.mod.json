@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "donutfabric",
+  "version": "${version}",
+  "name": "DonutFabric",
+  "description": "A server-side Fabric mod recreating the DonutSMP June 2026 economy and gameplay loop.",
+  "authors": ["n8tech"],
+  "contact": {
+    "homepage": "https://github.com/n8tech/donut-fabric",
+    "sources": "https://github.com/n8tech/donut-fabric"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": ["com.n8tech.donutfabric.DonutFabric"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
